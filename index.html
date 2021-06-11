@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de juegos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="nav-bg">
+        <nav class="navegacion contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Juegos</a>
+            <a href="#">Consolas</a>
+            <a href="#">Accesorios</a>
+        </nav>
+    </header>
+    <main class="contenedor seccion">
+        <h1>Registrarse</h1>
+        <picture>
+            <source srcset="imagen.jpeg" type="image/jpeg">
+            <img loading="lazy" src="build/img/destacada3.jpg" alt="Imagen Contacto">
+        </picture>
+
+        <h2>Llene el formulario para recibir notificaciones</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre">
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Tu Email" id="email">
+
+                <label for="password">Contraseña</label>
+                <input type="text" placeholder="Ej:Playsation" id="password">
+
+                <label for="mensaje">Describete:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tipo de Jugador</legend>
+
+                <label for="opciones">Te consideras...</label>
+                <select id="opciones">
+                    <option value="" disabled selected>-- Seleccione --</option>
+                    <option value="bueno">Buenardo</option>
+                    <option value="medio">Ni tan malo</option>
+                    <option value="malo">Malardo</option>
+                    <option value="n/a">No juego</option>
+                </select>
+
+                <label for="consolas">Cantidad de Consolas</label>
+                <input type="number" placeholder="EJ: 5" id="consolas">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de Seguridad</legend>
+
+                <p>Sexo</p>
+
+                <div class="forma-contacto">
+                    <label for="contactar-telefono">Masculino</label>
+                    <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+
+                    <label for="contactar-email">Femenino</label>
+                    <input name="contacto" type="radio" value="email" id="contactar-email">
+                </div>
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha">
+
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton">
+        </form>
+    </main>
+</body>
+</html> 
